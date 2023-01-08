@@ -18,7 +18,7 @@ background-image: url("media/backgroungMainPage.jpg");
 
 /* colors 8a3aff, 6f79ff, 3a9fff black-> 1f4568  grey->8198ae*/
 .sect{
-  padding: 90px 0;
+  padding: 50px 0;
   position: relative;
 }
 
@@ -36,7 +36,7 @@ background-image: url("media/backgroungMainPage.jpg");
 }
 
 .sect--padding-bottom{
-  padding-bottom:115px;
+  padding-bottom:30px;
 }
 
 .sect--padding-top{
