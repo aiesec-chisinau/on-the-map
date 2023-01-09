@@ -231,6 +231,11 @@ background-image: url("media/backgroungMainPage.jpg");
 -ms-transition: all 0.4s;
 -o-transition: all 0.4s;
 }
+.btncst{
+  width: 200px;
+ padding: 5px;
+  
+}
 
 .btn:hover{
     box-shadow: 0px 25px 18px -6px rgba(0, 0, 0,0.2);
@@ -886,6 +891,7 @@ vertical-align: middle;
 
 
 @media screen and (max-width:480px){
+  
   .moreinfo2{
     size: 3px;;
   }
@@ -985,6 +991,10 @@ vertical-align: middle;
     font-size: 12px;
     padding: 8px 8px;
 }
+.btncst{
+  width: 200px;
+  padding-top: 0px;
+}
   .btn--width {
     width: 100px;
     
@@ -1011,6 +1021,11 @@ margin-top: 0;
     font-size: 12px;
     float: none;
 }
- 
+.btncst{
+  height: 30px;
+  width: 200px;
+ padding-top: 5px;
+  
+}
 
 }
