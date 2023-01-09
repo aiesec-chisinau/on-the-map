@@ -336,6 +336,7 @@ background-image: url("media/backgroungMainPage.jpg");
 
 .carousel-inner{
   margin-top: -25px;
+  
 }
 .carousel-control__img{
  position: absolute;
@@ -882,7 +883,10 @@ vertical-align: middle;
 
 
 @media screen and (max-width:480px){
-  
+  .carousel-inner{
+    margin-top: -25px;
+    width: 98%;
+  }
   .price-box {
     padding: 0px 20px;
   }
