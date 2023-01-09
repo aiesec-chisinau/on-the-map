@@ -325,10 +325,12 @@ background-image: url("media/backgroungMainPage.jpg");
 
 .carousel-control.left{
   left:-100px;
+  bottom: -170px;
 }
 
 .carousel-control.right{
   right:-100px;
+  bottom: -170px;
 }
 
 .carousel-inner{
@@ -411,17 +413,7 @@ margin: 50px auto 15px auto;
   bottom: auto;
 }
 .item__content:after{
-content: "";
-width: 0;
-height: 0;
-border-left: 20px solid transparent;
-border-right: 20px solid transparent;
-border-top: 20px solid #fff;
-bottom: -20px;
-position: absolute;
-left: 50%;
-margin-left: -23px;
-filter: drop-shadow(0px 7px 4px rgba(0,0,0,.2));
+
 }
 
 .item__people {
@@ -823,10 +815,12 @@ vertical-align: middle;
     padding: 0px 10px;
   }
   .carousel-control.left{
-    left: -25px;
+    left: -15px;
+    bottom: -175px;
   }
   .carousel-control.right {
     right: -25px;
+    bottom: -175px;
 }
   .item__content {
     height: auto;
