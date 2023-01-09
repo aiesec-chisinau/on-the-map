@@ -246,6 +246,15 @@ background-image: url("media/backgroungMainPage.jpg");
 -ms-transition: all 0.4s;
 -o-transition: all 0.4s;
 }
+.btn3{
+  size: 10px;
+  color: #8198ae;
+  border: 0px;
+  padding: 10px 25px;
+  color: #fff;
+  border-color: white;
+ 
+}
 .btncst{
   width: 200px;
  padding: 5px;
@@ -267,6 +276,12 @@ background-image: url("media/backgroungMainPage.jpg");
     color: #8198ae;
     box-shadow: none;
     border:1px solid #c9d9e9;
+}
+.btn--revert2{
+  background-color:transparent;
+  color: #8198ae;
+  box-shadow: none;
+  
 }
 
 .btn--revert:hover{
@@ -1005,6 +1020,10 @@ vertical-align: middle;
   .btn {
     font-size: 12px;
     padding: 8px 8px;
+}
+.btn3 {
+  font-size: 12px;
+  padding: 8px 8px;
 }
 .btncst{
   width: 200px;
