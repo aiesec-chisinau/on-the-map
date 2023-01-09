@@ -23,6 +23,7 @@ background-image: url("media/backgroungMainPage.jpg");
 }
 
 
+
 .collapse{
  display: block;
 }
@@ -829,6 +830,7 @@ vertical-align: middle;
 
 @media screen and (max-width:767px){
   .footer {
+    margin-top: 55px;
     padding: 25px 0;
   }
   .price-box {
@@ -874,6 +876,7 @@ vertical-align: middle;
 
 
 @media screen and (max-width:480px){
+  
   .price-box {
     padding: 0px 20px;
   }
@@ -890,6 +893,7 @@ vertical-align: middle;
     width: 100%;
   }
   .footer {
+    margin-top: 55px;
     padding: 15px 0;
   }
   .footer__img {
@@ -900,7 +904,10 @@ vertical-align: middle;
     margin-left: 5px;
   }
   .sect {
-    padding: 20px 0  0  0;
+    padding: 20px 0  50px  0;
+  }
+  .sectsp {
+    padding: 20px 0  0px  0;
   }
   .sect--padding-top{
     padding-top: 80px;
