@@ -18,7 +18,7 @@ background-image: url("media/backgroungMainPage.jpg");
 
 /* colors 8a3aff, 6f79ff, 3a9fff black-> 1f4568  grey->8198ae*/
 .sect{
-  padding: 50px 0;
+  padding: 50px 0  0  0;
   position: relative;
 }
 
@@ -900,7 +900,7 @@ vertical-align: middle;
     margin-left: 5px;
   }
   .sect {
-    padding: 20px 0;
+    padding: 20px 0  0  0;
   }
   .sect--padding-top{
     padding-top: 80px;
@@ -909,7 +909,7 @@ vertical-align: middle;
     padding-top: 30px;
   }
   .row__sub {
-    font-size: 16px;
+    font-size: 12px;
    }
   .row__title {
     font-size: 20px;
