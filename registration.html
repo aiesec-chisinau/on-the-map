@@ -37,12 +37,13 @@
 <div style="height: 88%;" class=" sect--padding-top2">
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
+      <div style="margin-left: 20px; margin-right: 20px;" class="col-md-12">
         <form action="https://docs.google.com/forms/d/e/1FAIpQLSe-YU4nN22ejpABQfipEGL1JuC7Mi9vjjBLNq1bAda2yDm3Dg/formResponse"
         target="_self"
         id="bootstrapForm"
         method="POST">
         <h1 class="site__title">Formular de inregistrare</h1>
+        
         <br/>
       <fieldset>
           
@@ -205,16 +206,22 @@
       <div class="container">
         <div class="row">
           <div class="col text-center">
-            
-         <div style="color: #3a9fff;" id="butshow" onclick="colap()"><i><i>arata tot formularul</i></i></div> 
-         <div id="buthid" onclick="coldw()">arata formularul redus</div> 
-      <h3 class="site__titleb">sau</h3>
+            <p align="center" >   <a id="butshow" class=" btn btn--revert btncst"  onclick="colap()">arata tot formularul</a></p>
+                <p align="center" ><a id="buthid" class=" btn btn--revert btncst" onclick="coldw()">arata formularul redus</a></p>
+     
+        <h3 class="site__titleb">sau</h3>
       <input class="btn btn--width2" type="submit" value="Submit">
           </div>
         </div>
+        <br>
+        <div style=" box-shadow: 0px 18px 13px -6px rgba(0, 0, 0,0.2); border:1px solid #bbbbbb; border-radius: 10px; padding: 10px;">
+        <h2  class="row__sub"> <span style="color: rgb(218, 44, 44);" class="row__sub--light">Atentie!!!</span> </h2>
+        <h2  class="row__sub"> <span style="color: #302b2b;" class="row__sub--light">Trimițând acest formular sunteți de acord cu preluarea datelor cu caracter personal  </span> </h2>
+    </div>
       </div>
       
   </form>
+ 
     </div>
     </div>
   </div>
@@ -226,11 +233,11 @@
 <br/></br>
 
 
+<br>
+       
 
 
-
-
-
+        
 <!-- partial -->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
