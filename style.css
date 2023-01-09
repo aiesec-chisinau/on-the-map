@@ -7,6 +7,7 @@ html, body{
   padding: 0;
   font-family: 'Lato', sans-serif;
   color: #1f4568;
+  height: 100%;
 }
 
 body{
@@ -14,6 +15,20 @@ background-image: url("media/backgroungMainPage.jpg");
   background-size:cover;
   background-repeat:no-repeat;
   background-position: center;
+}
+
+
+.center-div
+{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  
 }
 
 /* colors 8a3aff, 6f79ff, 3a9fff black-> 1f4568  grey->8198ae*/
