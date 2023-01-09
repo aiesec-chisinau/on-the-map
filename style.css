@@ -22,7 +22,10 @@ background-image: url("media/backgroungMainPage.jpg");
   position: relative;
 }
 
-
+.moreinfo2{
+  color: #8198ae;
+  size: 10px;;
+}
 
 .collapse{
  display: block;
@@ -883,6 +886,9 @@ vertical-align: middle;
 
 
 @media screen and (max-width:480px){
+  .moreinfo2{
+    size: 3px;;
+  }
   .carousel-inner{
     margin-top: -25px;
     width: 98%;
