@@ -1,6 +1,7 @@
 
 document.getElementById("sel2").style.display='none';
 document.getElementById("buthid").style.display='none';
+document.getElementById("hidenelement").style.display='none';
 
 
 $('#bootstrapForm').submit(function (event) {
