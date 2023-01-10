@@ -17,7 +17,9 @@ background-image: url("");
   background-position: center;
 }
 
-
+main{
+  display: block;
+}
 .center-div
 {
   position: absolute;
@@ -774,7 +776,7 @@ left: 20%;
 .footer{
  background-color: #222222; 
   padding: 40px 0; 
-  position: absolute;
+  
   bottom: 0;
   width: 100%;
  
