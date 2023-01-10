@@ -878,6 +878,7 @@ vertical-align: middle;
   .footer {
     margin-top: 55px;
     padding: 25px 0;
+    bottom: 0;
   }
   .price-box {
     padding: 0px 35px;
