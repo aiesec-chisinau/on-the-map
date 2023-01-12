@@ -962,7 +962,9 @@ vertical-align: middle;
 
 
 @media screen and (max-width:480px){
-  
+  .partner_img{
+    width:100px;
+  }
   .moreinfo2{
     size: 3px;;
   }
