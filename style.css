@@ -20,6 +20,14 @@ background-image: url("");
 main{
   display: block;
 }
+
+.centdiv{
+margin-left: 00px;
+margin-right: 20px;
+}
+.roaddiv{
+  width: auto;
+}
 .center-div
 {
   position: absolute;
@@ -859,6 +867,10 @@ vertical-align: middle;
 
 
 @media screen and (max-width:991px){
+  .centdiv{
+    margin-left: 20px;
+    margin-right: 20px;
+    }
   .price-box {
     padding: 0px 10px;
   }
