@@ -1,0 +1,21 @@
+.footer {
+    position:absolute;
+  }
+
+
+  @media screen and (max-width:609px){
+    @media screen and (max-height:810px){
+      .footer {
+          position:relative;
+      }
+     
+  }
+   
+}
+
+@media screen and (max-height:760px){
+  .footer {
+      position:relative;
+  }
+ 
+}
