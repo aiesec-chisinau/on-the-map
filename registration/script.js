@@ -25,10 +25,12 @@ $('#bootstrapForm').submit(function (event) {
 function colap(){
   document.getElementById("sel2").style.display='block';
   document.getElementById("butshow").style.display='none';
+  document.getElementById("butshow2").style.display='none';
   document.getElementById("buthid").style.display='block';
 }
 function coldw(){
   document.getElementById("sel2").style.display='none';
   document.getElementById("butshow").style.display='block';
+  document.getElementById("butshow2").style.display='block';
   document.getElementById("buthid").style.display='none';
 }
