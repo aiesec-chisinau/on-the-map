@@ -15,6 +15,6 @@ function delay(time) {
   
 document.getElementById("pageiddiv").style.display='none';
 document.getElementById("preloadpage").style.display='block'
-delay(3500).then(() => 
+delay(2500).then(() => 
     dischange()
 );
