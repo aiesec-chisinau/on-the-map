@@ -1,5 +1,7 @@
 
-
+function dischange(){
+  window.location.href = "./home.html";
+}
 
 function delay(time) {
     return new Promise(resolve => setTimeout(resolve, time));
