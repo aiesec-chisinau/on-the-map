@@ -23,11 +23,11 @@ concurrency:
 jobs:
   build:
     env:
-      LOGIN_API_LINK: ${{secrets.LOGIN_API_LINK}}
+      LOGIN_API_LINK: ${{secrets.LOGIN_API_LINK}} >> $LINK_ENV
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        run: echo  ${{env.LOGIN_API_LINK}}
+        run: echo  ${{env.LOGIN_API_LINK}} 
   # Single deploy job since we're just deploying
   deploy:
     environment:
