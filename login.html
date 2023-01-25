@@ -48,7 +48,7 @@
         
         
                 <div style="margin-left: 20px; margin-right: 20px; " class="  col-md-12">
-                  <form>
+                  <form id="login-form">
                  
                   <h1 class="site__title">Login</h1>
                   
@@ -56,11 +56,12 @@
                
             
              
-                  <input  type="text" name="entry.1671100896" class=" form-control " required placeholder="username">
+                  <input  type="text" id="username" name="entry.1671100896" class=" form-control " required placeholder="username">
           <br>
-                  <input  type="text"  class=" form-control" required placeholder="password">
+                  <input  type="password" id="password" class=" form-control" required placeholder="password">
            
-              
+                  <p id="errorlogshow" align="center" style="color:red"></p>
+                    
                     <br> 
                     
                 <input class="btn btn--width3" type="submit" value="Login">
@@ -127,7 +128,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA=" crossorigin="anonymous"></script>
-<script  src="./script.js"></script>
+<script  src="./login.js"></script>
 
 
 </html>
