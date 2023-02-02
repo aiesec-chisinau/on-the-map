@@ -23,7 +23,7 @@ concurrency:
 jobs:
   build:
     env:
-      LOGIN_API_LINK: ${{secrets.LOGIN_API_LINK}} >> $LINK_ENV
+      LOGIN_API_LINK: ${{secrets.LOGIN_API_LINK}}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
