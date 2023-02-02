@@ -1,6 +1,9 @@
 
 document.getElementById("hideeldash").style.display='none';
 var editbtm=1;
+
+var apivariablelink= apilink();
+console.log(JSON.stringify(apilink()));
 function delay(time) {
     return new Promise(resolve => setTimeout(resolve, time));
   }
@@ -15,6 +18,7 @@ function delay(time) {
     phonenr: '',
     team: '',
     id: '',
+    password: ''
     }
     userdatastoarage=JSON.parse(localStorage.storeuser);
     ;
@@ -37,6 +41,7 @@ if(JSON.parse(localStorage.loginvalid)==true){
    
     document.getElementById("namedash").innerHTML=JSON.parse(localStorage.storeuser).name;
     document.getElementById("surnamedash").innerHTML=JSON.parse(localStorage.storeuser).surname;
+    document.getElementById("passdash").innerHTML=JSON.parse(localStorage.storeuser).password;
     document.getElementById("phonedash").innerHTML=JSON.parse(localStorage.storeuser).phonenr;
     document.getElementById("agedash").innerHTML=JSON.parse(localStorage.storeuser).age;
     
@@ -60,6 +65,8 @@ else{
             document.getElementById("hrnamedash").style.display='block';
             document.getElementById("surnamedashinp").style.display='block';
             document.getElementById("hrsurnamedash").style.display='block';
+            document.getElementById("passdashinp").style.display='block';
+            document.getElementById("hrpassdash").style.display='block';
            
             document.getElementById("namedash").innerHTML='<input type="text" id="fname" name="fname" >';
             var fname = document.getElementById('fname');
@@ -67,6 +74,9 @@ else{
            document.getElementById("surnamedash").innerHTML='<input type="text" id="fsurname" name="fname" >';
             var fsurname = document.getElementById('fsurname');
            fsurname.value = JSON.parse(localStorage.storeuser).surname;
+           document.getElementById("passdash").innerHTML='<input type="text" id="fpass" name="fname" >';
+            var fpass = document.getElementById('fpass');
+           fpass.value = JSON.parse(localStorage.storeuser).password;
 
 
         document.getElementById("phonedash").innerHTML='<input type="text" id="fphone" name="fname" >';
@@ -84,6 +94,8 @@ else{
             document.getElementById("hrnamedash").style.display='none';
         document.getElementById("surnamedashinp").style.display='none';
             document.getElementById("hrsurnamedash").style.display='none';
+        document.getElementById("passdashinp").style.display='none';
+            document.getElementById("hrpassdash").style.display='none';
             
 
 
@@ -93,6 +105,10 @@ else{
             userdatastoarage.surname=document.getElementById('surnamedash').innerHTML;
             $("#usernamedash").html(userdatastoarage.surname+' '+userdatastoarage.name);
    
+            document.getElementById("passdash").innerHTML=document.getElementById("fpass").value;
+            userdatastoarage.password=document.getElementById('passdash').innerHTML;
+            
+
             document.getElementById("phonedash").innerHTML=document.getElementById("fphone").value;
             userdatastoarage.phonenr=document.getElementById('phonedash').innerHTML;
              
@@ -102,7 +118,9 @@ else{
 
             localStorage.setItem('storeuser',JSON.stringify(userdatastoarage)); // save token to local storage
           
-        
+            var axioschandel =apivariablelink+"/"+userdatastoarage.id;
+            console.log(axioschandel);
+            axios.put(axioschandel, userdatastoarage);
         $("#editbtndash").html('Edit');
 
     }
@@ -134,4 +152,4 @@ var qrcodevarextend=0;
 
 
    
-   
+  
