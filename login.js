@@ -2,7 +2,7 @@ localStorage.setItem('loginvalid', "false"); // save state to local storage
 
 
 
-console.log(process.env.LOGIN_API_LINK);
+//console.log(process.env.LOGIN_API_LINK);
 
 
 
@@ -16,10 +16,19 @@ form.addEventListener('submit', async (e) => {
   const password = document.getElementById('password').value;
   
 
+console.log(apilink());
+  var LoginLink= apilink();
 
-  var LoginLink=process.env.LOGIN_API_LINK;
-
-
+  var userdatastoarage= {
+    name: '',
+    surname: '',
+    username: '',
+    mentor:'',
+    age: '',
+    phonenr: '',
+    team: '',
+    id: '',
+    }
 
   $.getJSON(LoginLink, 
     function (data) {
@@ -29,12 +38,28 @@ form.addEventListener('submit', async (e) => {
 
             if(value.username==username){
                 if(value.password==password){
-                    localStorage.setItem('loginvalid', "true"); // save state to local storage
-                    localStorage.setItem('username', username); // save username to local storage
-          localStorage.setItem('token', data.token); // save token to local storage
-          const encodedData = encodeURIComponent(JSON.stringify(username));
+                    localStorage.setItem('loginvalid',"true"); // save state to local storage
+
+                    userdatastoarage.username=value.username;
+                    userdatastoarage.name=value.name;
+                    userdatastoarage.surname=value.surname;
+                    userdatastoarage.mentor=value.mentor;
+                    userdatastoarage.team=value.team;
+                    userdatastoarage.age=value.age;
+                    userdatastoarage.phonenr=value.phonenr;
+                    userdatastoarage.id=value.id;
+                     
+
+                  //  console.log(JSON.stringify(userdatastoarage));
+                     //localStorage.setItem('storeuser', storeuser); // save user to local storage
+                     //localStorage.storeuser = JSON.stringify(userdatastoarage);
+           localStorage.setItem('storeuser',JSON.stringify(userdatastoarage)); // save token to local storage
+          
+           
+
+           
    // window.location.href = '/dashboard.html?userData=' + encodedData;
-          window.location.href = './dashboard.html'; // redirect to dashboard
+         window.location.href = './dashboard.html'; // redirect to dashboard
          
                   }else{document.getElementById("errorlogshow").innerHTML="incorrect username or password !";}
         
