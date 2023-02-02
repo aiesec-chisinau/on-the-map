@@ -22,7 +22,7 @@ function delay(time) {
     document.getElementById("preloadpage").style.display='none',
 document.getElementById("hideeldash").style.display='block'
   }
-delay(000).then(() => 
+delay(2000).then(() => 
 chandedash()
 );
 
