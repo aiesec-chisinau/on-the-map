@@ -60,6 +60,9 @@ else{
 
     function edtidash(){
         if(editbtm=='1'){
+          
+
+
             $("#editbtndash").html('Save');
             document.getElementById("namedashinp").style.display='block';
             document.getElementById("hrnamedash").style.display='block';
@@ -137,12 +140,13 @@ var qrcodevarextend=0;
             $(".qr-code").attr("src", "https://chart.googleapis.com/chart?cht=qr&chl=" + JSON.parse(localStorage.storeuser).id + "&chs=160x160&chld=L|0");
             
             document.getElementById("qrcodedivdash").style.height='250px';
-        img = document.getElementById('qrcodearrowflipdash');
-        img.className = "rotate" + 90;
+        document.getElementById('qrcodearrowflipdash').style.transform = 'rotate(180deg)'
+        
         document.getElementById("qrdashhide").style.display='block';
         qrcodevarextend=1;
         }
         else{
+            document.getElementById('qrcodearrowflipdash').style.transform = 'rotate(0deg)'
             document.getElementById("qrcodedivdash").style.height='auto';
             document.getElementById("qrdashhide").style.display='none';
             qrcodevarextend=0;
