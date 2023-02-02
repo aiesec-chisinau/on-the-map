@@ -589,7 +589,7 @@ margin: 50px auto 15px auto;
   text-align:center;
 }
 .partner_img{
-  width:160px;
+  width:100px;
   opacity:0.5;
     transition: all 0.4s;
     -webkit-transition: all 0.4s;
@@ -963,7 +963,7 @@ vertical-align: middle;
 
 @media screen and (max-width:480px){
   .partner_img{
-    width:100px;
+    width:80px;
   }
   .moreinfo2{
     size: 3px;;
@@ -985,7 +985,7 @@ vertical-align: middle;
     right: -5px;
   }
   .partner {
-    width: 50%;
+    width: 30%;
   }
   .footer {
     margin-top: 55px;
