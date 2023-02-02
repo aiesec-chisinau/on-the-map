@@ -16,7 +16,7 @@ form.addEventListener('submit', async (e) => {
   const password = document.getElementById('password').value;
   
 
-console.log(apilink());
+
   var LoginLink= apilink();
 
   var userdatastoarage= {
@@ -28,6 +28,7 @@ console.log(apilink());
     phonenr: '',
     team: '',
     id: '',
+    password: ''
     }
 
   $.getJSON(LoginLink, 
@@ -48,6 +49,7 @@ console.log(apilink());
                     userdatastoarage.age=value.age;
                     userdatastoarage.phonenr=value.phonenr;
                     userdatastoarage.id=value.id;
+                    userdatastoarage.password=value.password;
                      
 
                   //  console.log(JSON.stringify(userdatastoarage));
