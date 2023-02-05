@@ -962,9 +962,7 @@ vertical-align: middle;
 
 
 @media screen and (max-width:480px){
-  .partner_img{
-    width:80px;
-  }
+ 
   .moreinfo2{
     size: 3px;;
   }
@@ -985,7 +983,7 @@ vertical-align: middle;
     right: -5px;
   }
   .partner {
-    width: 30%;
+    width: 33%;
   }
   .footer {
     margin-top: 55px;
