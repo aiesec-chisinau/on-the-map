@@ -196,3 +196,17 @@ var qrcodevarextend=0;
             c3=0;
         }
     }
+
+    var d4=0;
+    function d(){
+        if (d4==0){
+            document.getElementById('4a').style.transform = 'rotate(180deg)';
+            document.getElementById("4b").style.display='block';
+            d4=1;
+        }
+        else{
+            document.getElementById('4a').style.transform = 'rotate(0deg)';
+            document.getElementById("4b").style.display='none';
+            d4=0;
+        }
+    }
