@@ -44,6 +44,8 @@ if(JSON.parse(localStorage.loginvalid)==true){
     document.getElementById("passdash").innerHTML=JSON.parse(localStorage.storeuser).password;
     document.getElementById("phonedash").innerHTML=JSON.parse(localStorage.storeuser).phonenr;
     document.getElementById("agedash").innerHTML=JSON.parse(localStorage.storeuser).age;
+    document.getElementById("emaildash").innerHTML=JSON.parse(localStorage.storeuser).email;
+    document.getElementById("socialdash").innerHTML=JSON.parse(localStorage.storeuser).contactlink;
     
 }
 else{
@@ -89,6 +91,14 @@ else{
         document.getElementById("agedash").innerHTML='<input type="text" id="fage" name="fname" >';
         var fage = document.getElementById('fage');
        fage.value = JSON.parse(localStorage.storeuser).age;
+
+       document.getElementById("emaildash").innerHTML='<input type="text" id="femail" name="fname" >';
+        var femail = document.getElementById('femail');
+       femail.value = JSON.parse(localStorage.storeuser).email;
+
+       document.getElementById("socialdash").innerHTML='<input type="text" id="fsocial" name="fname" >';
+        var fsocial = document.getElementById('fsocial');
+       fsocial.value = JSON.parse(localStorage.storeuser).contactlink;
         editbtm=2;
     }
     else{
@@ -117,6 +127,12 @@ else{
              
             document.getElementById("agedash").innerHTML=document.getElementById("fage").value;
             userdatastoarage.age=document.getElementById('agedash').innerHTML;
+
+            document.getElementById("emaildash").innerHTML=document.getElementById("femail").value;
+            userdatastoarage.email=document.getElementById('emaildash').innerHTML;
+
+            document.getElementById("socialdash").innerHTML=document.getElementById("fsocial").value;
+            userdatastoarage.contactlink=document.getElementById('socialdash').innerHTML;
             
 
             localStorage.setItem('storeuser',JSON.stringify(userdatastoarage)); // save token to local storage
