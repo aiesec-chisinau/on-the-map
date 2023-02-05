@@ -41,7 +41,7 @@ if(JSON.parse(localStorage.loginvalid)==true){
         document.getElementById("menthordash").innerHTML='Mentor :  '+'secret';//JSON.parse(localStorage.storeuser).mentor;
        
     }
-    if(JSON.parse(localStorage.storeuser).team=="mentor"){
+    else if(JSON.parse(localStorage.storeuser).team=="mentor"){
         document.getElementById("teamdash").innerHTML='Mentor';
         document.getElementById("menthordash").innerHTML='';
        
@@ -51,6 +51,7 @@ if(JSON.parse(localStorage.loginvalid)==true){
         document.getElementById("menthordash").innerHTML='Mentor :  '+'secret';//JSON.parse(localStorage.storeuser).mentor;
        
     }
+    
    
     document.getElementById("namedash").innerHTML=JSON.parse(localStorage.storeuser).name;
     document.getElementById("surnamedash").innerHTML=JSON.parse(localStorage.storeuser).surname;
