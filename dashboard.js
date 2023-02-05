@@ -41,6 +41,11 @@ if(JSON.parse(localStorage.loginvalid)==true){
         document.getElementById("menthordash").innerHTML='Mentor :  '+'secret';//JSON.parse(localStorage.storeuser).mentor;
        
     }
+    if(JSON.parse(localStorage.storeuser).team=="mentor"){
+        document.getElementById("teamdash").innerHTML='Mentor';
+        document.getElementById("menthordash").innerHTML='';
+       
+    }
     else{
         document.getElementById("teamdash").innerHTML='Team :  '+'secret';//JSON.parse(localStorage.storeuser).team;
         document.getElementById("menthordash").innerHTML='Mentor :  '+'secret';//JSON.parse(localStorage.storeuser).mentor;
