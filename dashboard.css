@@ -63,9 +63,16 @@
  
   vertical-align: middle;
 }
+.child40 {
+  display: inline-block;
+  width: 19%;
+ 
+ 
+  vertical-align: middle;
+}
 .childevent {
   display: inline-block;
-  width: 59%;
+  width: 40%;
  
  
   vertical-align: middle;
