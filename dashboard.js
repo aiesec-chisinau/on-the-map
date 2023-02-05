@@ -45,7 +45,7 @@ if(JSON.parse(localStorage.loginvalid)==true){
     document.getElementById("phonedash").innerHTML=JSON.parse(localStorage.storeuser).phonenr;
     document.getElementById("agedash").innerHTML=JSON.parse(localStorage.storeuser).age;
     document.getElementById("emaildash").innerHTML=JSON.parse(localStorage.storeuser).email;
-    document.getElementById("socialdash").innerHTML='<a>'+JSON.parse(localStorage.storeuser).contactlink+'</a>';
+    document.getElementById("socialdash").innerHTML='<a herf="'+document.getElementById("fsocial").value+'">'+JSON.parse(localStorage.storeuser).contactlink+'</a>';
     
 }
 else{
@@ -131,7 +131,7 @@ else{
             document.getElementById("emaildash").innerHTML=document.getElementById("femail").value;
             userdatastoarage.email=document.getElementById('emaildash').innerHTML;
 
-            document.getElementById("socialdash").innerHTML='<a>'+document.getElementById("fsocial").value+'</a>';
+            document.getElementById("socialdash").innerHTML='<a herf="'+document.getElementById("fsocial").value+'">'+document.getElementById("fsocial").value+'</a>';
             userdatastoarage.contactlink=document.getElementById('socialdash').innerHTML;
             
 
