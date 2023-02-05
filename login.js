@@ -28,7 +28,13 @@ form.addEventListener('submit', async (e) => {
     phonenr: '',
     team: '',
     id: '',
-    password: ''
+    password: '',
+    email: '',
+    mentorcontact: '',
+    contactlink:''
+
+
+  
     }
 
   $.getJSON(LoginLink, 
@@ -50,6 +56,9 @@ form.addEventListener('submit', async (e) => {
                     userdatastoarage.phonenr=value.phonenr;
                     userdatastoarage.id=value.id;
                     userdatastoarage.password=value.password;
+                    userdatastoarage.email=value.email;
+                    userdatastoarage.mentorcontact=value.mentorcontact;
+                    userdatastoarage.contactlink=value.contactlink;
                      
 
                   //  console.log(JSON.stringify(userdatastoarage));
