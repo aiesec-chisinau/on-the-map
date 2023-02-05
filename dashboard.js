@@ -36,8 +36,8 @@ if(JSON.parse(localStorage.loginvalid)==true){
     console.log(JSON.parse(localStorage.storeuser));
     $("#usernamedash").html(JSON.parse(localStorage.storeuser).surname+' '+JSON.parse(localStorage.storeuser).name);
    
-    document.getElementById("teamdash").innerHTML='Team :  '+JSON.parse(localStorage.storeuser).team;
-    document.getElementById("menthordash").innerHTML='Mentor :  '+JSON.parse(localStorage.storeuser).mentor;
+    document.getElementById("teamdash").innerHTML='Team :  '+'secret';//JSON.parse(localStorage.storeuser).team;
+    document.getElementById("menthordash").innerHTML='Mentor :  '+'secret';//JSON.parse(localStorage.storeuser).mentor;
    
     document.getElementById("namedash").innerHTML=JSON.parse(localStorage.storeuser).name;
     document.getElementById("surnamedash").innerHTML=JSON.parse(localStorage.storeuser).surname;
