@@ -36,8 +36,16 @@ if(JSON.parse(localStorage.loginvalid)==true){
     console.log(JSON.parse(localStorage.storeuser));
     $("#usernamedash").html(JSON.parse(localStorage.storeuser).surname+' '+JSON.parse(localStorage.storeuser).name);
    
-    document.getElementById("teamdash").innerHTML='Team :  '+'secret';//JSON.parse(localStorage.storeuser).team;
-    document.getElementById("menthordash").innerHTML='Mentor :  '+'secret';//JSON.parse(localStorage.storeuser).mentor;
+    if(JSON.parse(localStorage.storeuser).team=="OC"){
+        document.getElementById("teamdash").innerHTML='Membru OC';
+        document.getElementById("menthordash").innerHTML='Mentor :  '+'secret';//JSON.parse(localStorage.storeuser).mentor;
+       
+    }
+    else{
+        document.getElementById("teamdash").innerHTML='Team :  '+'secret';//JSON.parse(localStorage.storeuser).team;
+        document.getElementById("menthordash").innerHTML='Mentor :  '+'secret';//JSON.parse(localStorage.storeuser).mentor;
+       
+    }
    
     document.getElementById("namedash").innerHTML=JSON.parse(localStorage.storeuser).name;
     document.getElementById("surnamedash").innerHTML=JSON.parse(localStorage.storeuser).surname;
@@ -45,7 +53,7 @@ if(JSON.parse(localStorage.loginvalid)==true){
     document.getElementById("phonedash").innerHTML=JSON.parse(localStorage.storeuser).phonenr;
     document.getElementById("agedash").innerHTML=JSON.parse(localStorage.storeuser).age;
     document.getElementById("emaildash").innerHTML=JSON.parse(localStorage.storeuser).email;
-    document.getElementById("socialdash").innerHTML='<a herf="'+document.getElementById("fsocial").value+'">'+JSON.parse(localStorage.storeuser).contactlink+'</a>';
+    document.getElementById("socialdash").innerHTML='<a href="'+document.getElementById("fsocial").value+'">'+JSON.parse(localStorage.storeuser).contactlink+'</a>';
     
 }
 else{
@@ -131,7 +139,7 @@ else{
             document.getElementById("emaildash").innerHTML=document.getElementById("femail").value;
             userdatastoarage.email=document.getElementById('emaildash').innerHTML;
 
-            document.getElementById("socialdash").innerHTML='<a herf="'+document.getElementById("fsocial").value+'">'+document.getElementById("fsocial").value+'</a>';
+            document.getElementById("socialdash").innerHTML='<a href="'+document.getElementById("fsocial").value+'">'+document.getElementById("fsocial").value+'</a>';
             userdatastoarage.contactlink=document.getElementById('socialdash').innerHTML;
             
 
