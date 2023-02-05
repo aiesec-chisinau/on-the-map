@@ -26,7 +26,7 @@ function delay(time) {
     document.getElementById("preloadpage").style.display='none',
 document.getElementById("hideeldash").style.display='block'
   }
-delay(2000).then(() => 
+delay(000).then(() => 
 chandedash()
 );
 
@@ -154,6 +154,45 @@ var qrcodevarextend=0;
     }
 
 
-
    
-  
+    var a1=0;
+    function a(){
+        if (a1==0){
+            document.getElementById('1a').style.transform = 'rotate(180deg)';
+            document.getElementById("1b").style.display='block';
+            a1=1;
+        }
+        else{
+            document.getElementById('1a').style.transform = 'rotate(0deg)';
+            document.getElementById("1b").style.display='none';
+            a1=0;
+        }
+    }
+
+    var b2=0;
+    function b(){
+        if (b2==0){
+            document.getElementById('2a').style.transform = 'rotate(180deg)';
+            document.getElementById("2b").style.display='block';
+            b2=1;
+        }
+        else{
+            document.getElementById('2a').style.transform = 'rotate(0deg)';
+            document.getElementById("2b").style.display='none';
+            b2=0;
+        }
+    }
+
+    var c3=0;
+    function c(){
+        if (c3==0){
+            document.getElementById('3a').style.transform = 'rotate(180deg)';
+            document.getElementById("3b").style.display='block';
+            c3=1;
+        }
+        else{
+            document.getElementById('3a').style.transform = 'rotate(0deg)';
+            document.getElementById("3b").style.display='none';
+            c3=0;
+        }
+    }
