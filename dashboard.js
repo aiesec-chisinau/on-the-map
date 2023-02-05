@@ -8,7 +8,7 @@ function delay(time) {
     return new Promise(resolve => setTimeout(resolve, time));
   }
 
-
+var socialkinkdata='';
   var userdatastoarage= {
     name: '',
     surname: '',
@@ -53,7 +53,8 @@ if(JSON.parse(localStorage.loginvalid)==true){
     document.getElementById("phonedash").innerHTML=JSON.parse(localStorage.storeuser).phonenr;
     document.getElementById("agedash").innerHTML=JSON.parse(localStorage.storeuser).age;
     document.getElementById("emaildash").innerHTML=JSON.parse(localStorage.storeuser).email;
-    document.getElementById("socialdash").innerHTML='<a href="'+document.getElementById("fsocial").value+'">'+JSON.parse(localStorage.storeuser).contactlink+'</a>';
+    document.getElementById("socialdash").innerHTML='<a href="'+JSON.parse(localStorage.storeuser).contactlink+'">'+JSON.parse(localStorage.storeuser).contactlink+'</a>';
+var socialkinkdata=JSON.parse(localStorage.storeuser).contactlink;
     
 }
 else{
@@ -139,8 +140,9 @@ else{
             document.getElementById("emaildash").innerHTML=document.getElementById("femail").value;
             userdatastoarage.email=document.getElementById('emaildash').innerHTML;
 
+            socialkinkdata=document.getElementById("fsocial").value;
             document.getElementById("socialdash").innerHTML='<a href="'+document.getElementById("fsocial").value+'">'+document.getElementById("fsocial").value+'</a>';
-            userdatastoarage.contactlink=document.getElementById('socialdash').innerHTML;
+            userdatastoarage.contactlink=socialkinkdata;
             
 
             localStorage.setItem('storeuser',JSON.stringify(userdatastoarage)); // save token to local storage
