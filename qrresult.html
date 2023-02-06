@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>On The Map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="media/Logo_white.jpg"/>
+<meta name="theme-color" content="#3a9fff"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./footer.css">
+<link rel="stylesheet" href="./login.css">
+</head>
+<body>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<!-- partial:index.partial.html -->
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="media/Logo_white.jpg"/>
+<meta name="theme-color" content="#1885ed">
+  <title>On The Map</title>
+ 
+</head>
+
+
+<header class="header">
+  <div class="container header__container">
+    <div  class="header__logo"><a style = "color: #222222" href="./home.html"><img class="header__img"    height="25px" width="25px" src="media/Logo.png"> <h1  class="header__title">On the map<span class="header__light"></span></h1></a></div> 
+    
+  
+  <div class="header__menu">
+    <nav id="navbar" class="header__nav collapse">
+      <ul class="header__elenco">
+        <li class="header__el"><a href="contact.html" class="header__link">Contact us</a></li>
+       </ul>
+    </nav>
+  </div>
+    </div>
+</header>
+<main role="main" class="container">
+
+<div  class=" sect--padding-top2">
+  <div class="container">
+    <div class=" row align-items-center h-100">
+      <div class=" center-div">
+
+        <div  class=" sect--padding-top2">
+          <div class=" container">
+            <div class="row align-items-center h-100">
+              <div style="max-width: 358px; " class="  center-div" >
+        
+        
+                <div style="margin-left: 20px; margin-right: 20px;border: 1px solid #222222; border-radius: 20px; padding: 10px; " class="  col-md-12">
+                  <h1 id="fullname" class="site__title"></h1>
+          <br>
+          <p align="center" id="teamresult" style="font-size: 16px;"></p>
+
+                 
+              </div>
+<br>
+              <input onclick=" window.location.href = './qrscanner.html';" class="btn btn--width3"  value="Back">
+               
+
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+       
+       
+    </div>
+    </div>
+  </div>
+</div>
+
+
+
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-xs-6">
+       <img class="footer__img" src="media/Logo_1_25x25.png"> <h1 class="footer__title">On The Map<span class="footer__light"><br/>made by AIESEC</span></h1></div>
+      <div class="col-md-9 col-xs-6">
+        <div class="footer__social">
+          
+          <a href="https://www.facebook.com/aiesec.in.chisinau" class="footer__social-l">
+            
+            <img  src="./media/facebook_r.png" ></a>
+          
+           <a href="https://www.instagram.com/chisinau.onthemap" class="footer__social-l">
+            <img src="./media/instagram_r.png" ></a>
+          
+          <a href="https://www.linkedin.com/showcase/aiesec-in-chisinau/" class="footer__social-l">
+            <img src="./media/linkedin_r.png" > </a>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+</body>
+<!-- partial -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA=" crossorigin="anonymous"></script>
+<script>
+
+$("#fullname").html("<b>"+JSON.parse(localStorage.qrreslutvariable).fullname+'</b>');
+document.getElementById("teamresult").innerHTML="echipa :<b> "+JSON.parse(localStorage.qrreslutvariable).team+'</b>';
+
+
+
+
+</script>
+
+
+</html>
