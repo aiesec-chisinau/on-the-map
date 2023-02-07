@@ -47,8 +47,8 @@ if(JSON.parse(localStorage.loginvalid)==true){
        
     }
     else{
-        document.getElementById("teamdash").innerHTML='Team :  '+'secret';//JSON.parse(localStorage.storeuser).team;
-        document.getElementById("menthordash").innerHTML='Mentor :  '+'secret';//JSON.parse(localStorage.storeuser).mentor;
+        document.getElementById("teamdash").innerHTML='Team :  '+JSON.parse(localStorage.storeuser).team;
+        document.getElementById("menthordash").innerHTML='Mentor :  '+JSON.parse(localStorage.storeuser).mentor;
        
     }
     
