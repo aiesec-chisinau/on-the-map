@@ -16,6 +16,7 @@ var socialkinkdata='';
     mentor:'',
     age: '',
     phonenr: '',
+    mentorcontact: '',
     team: '',
     id: '',
     password: ''
@@ -51,7 +52,7 @@ if(JSON.parse(localStorage.loginvalid)==true){
         document.getElementById("menthordash").innerHTML='Mentor :  '+JSON.parse(localStorage.storeuser).mentor;
        
     }
-    
+    document.getElementById("2b").innerHTML=JSON.parse(localStorage.storeuser).mentorcontact;
    
     document.getElementById("namedash").innerHTML=JSON.parse(localStorage.storeuser).name;
     document.getElementById("surnamedash").innerHTML=JSON.parse(localStorage.storeuser).surname;
