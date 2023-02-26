@@ -1,5 +1,6 @@
 
 document.getElementById("hideeldash").style.display='none';
+document.getElementById("loadinglogo").src="./media/logo-gif-black.gif"+"?a="+Math.random();;
 var editbtm=1;
 
 var apivariablelink= apilink();
