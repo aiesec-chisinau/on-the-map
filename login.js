@@ -77,7 +77,7 @@ form.addEventListener('submit', async (e) => {
                   
 
         }
-        else{document.getElementById("errorlogshow").innerHTML="incorrect username or password !";}
+        
         });
     });
 });
