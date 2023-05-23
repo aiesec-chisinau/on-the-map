@@ -1,0 +1,18 @@
+ <div className="otm_home_totaldiv">
+
+
+
+<Header/>
+
+
+<div id='otm-home-join'>
+    <a href="https://www.instagram.com/aiesec.onthemap"><img className="otm_site__img" src="/images/onthemap/main.png"/></a>
+    <Link to='/*' id='otm_home-joinus' className="otm_home_btn otm_home_btn--white">{t("otm.joinus")}</Link>
+    <ArrowDownwardIcon id='otm_home_down_arrow'/>
+</div>
+
+
+
+<Footer/>
+
+            </div>
